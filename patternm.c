@@ -4,8 +4,6 @@
 #include <string.h>
 #include <ctype.h>
 
-// devo convertire le cifre in numeri
-
 char *read_text(int *dim)
 {
 	int size = 2, i = 0;
@@ -32,9 +30,9 @@ int main(int argvc, char **argv)
 	int q, d = 256, p = 0, t = 0, match = 0, n, m;
 	char *text, *pattern;
 	
-	printf("Algoritmo di Rabin-Karp - Pattern matching\n");
+	printf("Rabin-Karp algorithm - Pattern matching\n");
 
-	printf("Testo: ");
+	printf("Text: ");
 	text = read_text(&n);
 
 	printf("Pattern: ");
@@ -65,7 +63,7 @@ int main(int argvc, char **argv)
 			t += q;
 	}
 
-	printf("Totale match: %d\n", match);
+	printf("Number of matches: %d\n", match);
 
 	return 0;
 }
