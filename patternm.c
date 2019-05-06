@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
-#include <ctype.h>
 
 char *read_text(int *dim)
 {
